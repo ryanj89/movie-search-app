@@ -1,0 +1,15 @@
+<section class="col-sm-12">
+
+  <form name="form" class="form-inline" ng-submit="$ctrl.searchMovie()" novalidate>
+      <label for="search-field">Search:</label>
+    <div class="form-group">
+      <input id="search-field" class="form-control" type="text" name="search-field" ng-model="$ctrl.query" required>
+    </div>
+      <input class="btn btn-primary" ng-disabled="form.$invalid" type="submit" value="Search">
+  </form>
+
+  <hr>
+
+  <ui-view></ui-view>
+
+</section>

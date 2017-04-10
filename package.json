@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "angular": "1.6.0",
+    "angular-ui-router": "1.0.0-beta.3",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "lite-server": "^2.3.0"
+  },
+  "name": "movie-search-app",
+  "version": "1.0.0",
+  "description": "Movie Search App using AngularJS",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Johnson - ryanj89@gmail.com",
+  "license": "ISC"
+}

@@ -1,0 +1,54 @@
+<section class="col-sm-12">
+  <h2>{{$ctrl.movie.Title}} ({{$ctrl.movie.Year}})</h2>
+  <div class="row">
+    <section class="col-md-4">
+      <img class="center-block" ng-src="{{$ctrl.movie.Poster}}" alt="Movie Poster">
+      <hr>
+      <h3>Ratings</h3>
+      <dl ng-repeat="rating in $ctrl.movie.Ratings">
+        <dt>{{rating.Source}}</dt>
+        <dd>{{rating.Value}}</dd>
+      </dl>
+    </section>
+
+    <section class="col-md-8">
+      <hr>
+      <dl>
+        <dt>Starring</dt>
+        <dd>{{$ctrl.movie.Actors}}</dd>
+        <br>
+        <dt>Plot Description</dt>
+        <dd>{{$ctrl.movie.Plot}}</dd>
+      </dl>
+
+      <hr>
+      <h3>Additional Details</h3>
+
+      <dl>
+        <dt>Awards</dt>
+        <dd>{{$ctrl.movie.Awards}}</dd>
+        <dt>Country</dt>
+        <dd>{{$ctrl.movie.Country}}</dd>
+        <dt>Director</dt>
+        <dd>{{$ctrl.movie.Director}}</dd>
+        <dt>Genre</dt>
+        <dd>{{$ctrl.movie.Genre}}</dd>
+        <dt>Language</dt>
+        <dd>{{$ctrl.movie.Language}}</dd>
+        <dt>Metascore</dt>
+        <dd>{{$ctrl.movie.Metascore}}</dd>
+        <dt>Rated</dt>
+        <dd>{{$ctrl.movie.Rated}}</dd>
+        <dt>Released</dt>
+        <dd>{{$ctrl.movie.Released}}</dd>
+        <dt>Runtime</dt>
+        <dd>{{$ctrl.movie.Runtime}}</dd>
+        <dt>Writers</dt>
+        <dd>{{$ctrl.movie.Writer}}</dd>
+        <dt>Website</dt>
+        <dd><a href="{{$ctrl.movie.Website}}">{{$ctrl.movie.Website}}</a></dd>
+      </dl>
+    </section>
+
+  </div>
+</section>

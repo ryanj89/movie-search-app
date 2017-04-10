@@ -1,0 +1,10 @@
+body {
+  background: #56638A;
+}
+
+.container {
+  background: #FCFCFC;
+}
+[ui-sref] {
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <base href="/">
+  <title>Movie Search App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        
+        <h1>Movie Search App</h1>
+        <ui-view></ui-view>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="js/app/app.module.js"></script>
+  <script src="js/app/app.config.js"></script>
+  <script src="js/movies/movie-search.component.js"></script>
+  <script src="js/movies/movie-list.component.js"></script>
+  <script src="js/movies/movie-detail.component.js"></script>
+  <script src="js/services/movies.service.js"></script>
+</body>
+
+</html>
